@@ -871,7 +871,7 @@ namespace UnityEngine.EventSystems
         {
 			//todo: enable for Unity Input System
 #if ENABLE_LEGACY_INPUT_MANAGER
-			var pressed = Input.GetKeyDown(gazeClickKey) || OVRInput.GetDown(joyPadClickButton);
+			var pressed =  Input.GetKeyDown(gazeClickKey) || OVRInput.GetDown(joyPadClickButton);
             var released = Input.GetKeyUp(gazeClickKey) || OVRInput.GetUp(joyPadClickButton);
 
 #if UNITY_ANDROID && !UNITY_EDITOR
